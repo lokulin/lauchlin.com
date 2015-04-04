@@ -16,6 +16,7 @@
                             <hr class="star-primary">
                             <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
                             <p>{{ post.description }}</p>
+                            <p><a href="{{ post.url }}">More...</a>
                             {% if post.download }} %}
                               <div class="col-lg-8 col-lg-offset-2 text-center">
                               <a href="{{ post.download }}" class="btn btn-lg btn-outline">
@@ -24,7 +25,7 @@
                             {% endif %}
                             <div class="portfolio-details">
                             <ul class="list-inline item-details">
-                                <li>Client:
+                                <li>With:
                                     <strong>{{ post.client }}
                                     </strong>
                                 </li>
@@ -32,7 +33,7 @@
                                     <strong>{{ post.project-date }}
                                     </strong>
                                 </li>
-                                <li>Service:
+                                <li>Category:
                                     <strong>{{ post.category }}
                                     </strong>
                                 </li>

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 modal-id: 2
 date: 2015-04-03
 img: computer.png

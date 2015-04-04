@@ -426,6 +426,10 @@ footer .footer-below {
     box-shadow: none;
 }
 
+.post-content {
+  padding-top: 120px;
+}
+
 .portfolio-modal .modal-content h2 {
     margin: 0;
     font-size: 3em;

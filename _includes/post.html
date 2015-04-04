@@ -1,0 +1,36 @@
+          <div class="modal-content post-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>{{ page.title }}</h2>
+                            <img src="/img/portfolio/{{ page.img }}" class="img-responsive img-centered" alt="{{ page.alt }}">
+                            <p>{{ page.description }}</p>
+                            {{ page.content }}
+                            {% if page.download }} %}
+                              <div class="col-lg-8 col-lg-offset-2 text-center">
+                              <a href="{{ page.download }}" class="btn btn-lg btn-outline">
+                                <i class="fa fa-download"></i> {{ page.download-desc }}</a>
+                              </div>
+                            {% endif %}
+                            <div class="portfolio-details">
+                            <ul class="list-inline item-details">
+                                <li>With:
+                                    <strong>{{ page.client }}
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong>{{ page.project-date }}
+                                    </strong>
+                                </li>
+                                <li>Category:
+                                    <strong>{{ page.category }}
+                                    </strong>
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
