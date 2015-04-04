@@ -1,0 +1,66 @@
+---
+layout: tumblrpost
+title: Save all open images from Gimp.
+date: '2014-04-21T12:00:16+10:00'
+tags: []
+tumblr_url: http://blog.lauchlin.com/post/83366287442/save-all-open-images-from-gimp
+---
+<p>Handy if you are scanning in a lot of images and you just want to export them all in one go. It is based on a script by Saul Goode, extended to prompt for image base name, directory etc.</p>
+<p>Save it as saveall.scm in your Gimp scripts directory. E.g. ~/.gimp-2.8/scripts/</p>
+<pre class="highlight">;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; This program is free software; you <br/>; can redistribute it and/or modify 
+; it under the terms of the GNU <br/>; General Public License as published 
+; by the Free Software Foundation; <br/>; either version 2 of the License, or 
+; (at your option) any later version. 
+; 
+; This program is distributed in the<br/>; hope that it will be useful, 
+; but WITHOUT ANY WARRANTY;<br/>; without even the implied warranty of 
+; MERCHANTABILITY or FITNESS <br/>; FOR A PARTICULAR PURPOSE.  <br/>; See the GNU General Public License<br/>;  for more details. 
+
+(define (script-fu-save-all-images inDir inSaveType <br/>inFileName inFileNumber) 
+  (let* (
+          (i (car (gimp-image-list)))
+          (ii (car (gimp-image-list))) 
+          (image)
+          (newFileName "")
+          (saveString "")
+          (pathchar (if (equal? <br/>                 (substring gimp-dir 0 1) "/") "/" "\\"))
+        )
+    (set! saveString
+      (cond 
+        (( equal? inSaveType 0 ) ".jpg" )
+        (( equal? inSaveType 1 ) ".bmp" )
+        (( equal? inSaveType 2 ) ".png" )
+        (( equal? inSaveType 3 ) ".tif" )
+      )
+    ) 
+    (while (&gt; i 0) 
+      (set! image (vector-ref (cadr (gimp-image-list)) (- i 1)))
+      (set! newFileName (string-append inDir <br/>              pathchar inFileName 
+              (substring "00000" (string-length <br/>              (number-&gt;string (+ inFileNumber i))))
+              (number-&gt;string (+ inFileNumber i)) saveString))
+      (gimp-file-save RUN-NONINTERACTIVE 
+                      image
+                      (car (gimp-image-get-active-layer image))
+                      newFileName
+                      newFileName
+      ) 
+      (gimp-image-clean-all image) 
+      (set! i (- i 1))
+    )
+  )
+) 
+
+(script-fu-register "script-fu-save-all-images" 
+ "/File/Save ALL As" 
+ "Save all opened images as ..." 
+ "Lauchlin Wilkinson (&amp; Saul Goode)" 
+ "Lauchlin Wilkinson (&amp; Saul Goode)" 
+ "2014/04/21" 
+ ""
+ SF-DIRNAME    "Save Directory" ""
+ SF-OPTION     "Save File Type" (list "jpg" "bmp" "png" "tif")
+ SF-STRING     "Save File Base Name" "IMAGE"
+ SF-ADJUSTMENT "Save File Start Number" <br/>      (list 0 0 9000 1 100 0 SF-SPINNER)
+ )
+</pre>

@@ -39,6 +39,9 @@ address:
 # Credits content
 credits: 'Based on Freelancer, a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
 
+paginate: 5
+paginate_path: "/blog/page:num/"
+
 gems:
   - jemoji
 

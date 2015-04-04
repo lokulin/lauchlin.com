@@ -1,0 +1,13 @@
+---
+layout: tumblrpost
+title: Java and the For-Each loop
+date: '2014-01-29T14:24:00+11:00'
+tags: []
+tumblr_url: http://blog.lauchlin.com/post/74903612294/java-and-the-for-each-loop
+---
+<p>I don&#8217;t delude myself by calling myself a Java guru, let alone an expert, but occasionally I am reminded of something that just makes me really realise how much of a noob I can be.  Take for example the For-Each construct.  For as long as I can remember I&#8217;ve been using the following pattern for creating a simple loop through a collection.</p>
+<p>for (Iterator&lt;TimerTask&gt; i = c.iterator(); i.hasNext(); )<br/>    i.next().cancel();</p>
+<p>Today however my IDE handily popped up a hint asking if I wanted convert my simple loop to a for-each loop like so:</p>
+<p>for (TimerTask t&#160;: c)<br/>    t.cancel();</p>
+<p>It is so much more beautiful, and when you read &#8220;:&#8221; as &#8220;in&#8221; it should be easy to remember.  &#8221;For each TimerTask t in c do&#8230;&#8221;.</p>
+<p>Nice.</p>
