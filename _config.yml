@@ -1,7 +1,7 @@
 # Site settings
 title: Lauchlin Wilkinson
 email: contact@lauchlin.com
-url: http://localhost:4000
+url: http://www.lauchlin.com/
 description: "Portfolio and contact details for Lauchlin Wilkinson."
 
 # Contact form: comment the line below if you want to stick with the default PHP contact form
