@@ -70,11 +70,12 @@
       req.withCredentials = true;
       req.onreadystatechange=function(){
         if (req.readyState==4 && req.status==200) {
-          var result=JSON.parse(this.responseText);
-          if(result.redirect) {
-            window.location = result.redirect;
+          var theResult=JSON.parse(this.responseText);
+          console.log(theResult);
+          if(theResult.redirect != "") {
+            window.location = theResult.redirect;
           } else {
-            updateRobot(this.robot, result);
+            updateRobot(this.robot, theResult);
           }
         }
       }
