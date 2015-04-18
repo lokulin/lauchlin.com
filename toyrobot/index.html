@@ -72,8 +72,8 @@
         if (req.readyState==4 && req.status==200) {
           var theResult=JSON.parse(this.responseText);
           console.log(theResult);
-          if(theResult.redirect != "") {
-            window.location = theResult.redirect;
+          if(theResult.x == undefined) {
+            window.location = "http://api-toyrobot.lauchlin.com/auth/github";
           } else {
             updateRobot(this.robot, theResult);
           }
