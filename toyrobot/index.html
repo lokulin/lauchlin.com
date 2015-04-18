@@ -71,6 +71,7 @@
       req.onreadystatechange=function(){
         if (req.readyState==4 && req.status==200) {
           result=JSON.parse(this.responseText);
+          console.log(result);
           if(result.redirect) {
             window.location = "http://api-toyrobot.lauchlin.com/auth/github";
           } else {
