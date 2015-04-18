@@ -67,6 +67,7 @@
   function doReq(method,robot) {
       var req = new XMLHttpRequest();
       req.robot = robot
+      req.withCredentials = true;
       req.onreadystatechange=function(){
         if (req.readyState==4 && req.status==200) {
           updateRobot(this.robot, JSON.parse(this.responseText));
