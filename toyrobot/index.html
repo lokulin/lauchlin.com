@@ -70,7 +70,12 @@
       req.withCredentials = true;
       req.onreadystatechange=function(){
         if (req.readyState==4 && req.status==200) {
-          updateRobot(this.robot, JSON.parse(this.responseText));
+          result=JSON.parse(this.responseText);
+          if(result.redirect) {
+            window.location = "http://api-toyrobot.lauchlin.com/auth/github";
+          } else {
+            updateRobot(this.robot, JSON.parse(this.responseText));
+          }
         }
       }
       req.open("GET","http://api-toyrobot.lauchlin.com/"+method,true);
