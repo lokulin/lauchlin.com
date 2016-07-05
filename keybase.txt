@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/lokulin
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.lauchlin.com
+  * I am lokulin (https://keybase.io/lokulin) on keybase.
+  * I have a public key with fingerprint 4F04 037B 6FBE 255E FC0B  0823 B779 F504 83B8 D296
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101864f27e28eb63671a2ed15b4dfd962ed103e4e6dd320ffbc876f9fc74f7da8410a",
+            "fingerprint": "4f04037b6fbe255efc0b0823b779f50483b8d296",
+            "host": "keybase.io",
+            "key_id": "b779f50483b8d296",
+            "kid": "0101864f27e28eb63671a2ed15b4dfd962ed103e4e6dd320ffbc876f9fc74f7da8410a",
+            "uid": "e467c89756e2da7806d8d64019f6d919",
+            "username": "lokulin"
+        },
+        "service": {
+            "hostname": "www.lauchlin.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1467685331,
+    "expire_in": 157680000,
+    "prev": "2d276b817fc2f662a3c38eb219fea47e1159e44f592584d713d372bcab84d598",
+    "seqno": 7,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.53
+Comment: https://keybase.io/crypto
+
+yMIsAnicrZJbSBRRGMd3K7toVuStTEsGujys61zPmdlKiuxmPlQklRTrnDnnuIPr
+zOzu7G5lhlEQUUFFEAXdoF4KLLLSblQWGXQhKswHyQJRX0S6QEGQnVnqrcfm5cz5
+zu//P//v4zzJHe/L9l8rLAvE3qtX/M8fnU76NjfPftvMIRvv5ELNXCPJLCSKScIN
+N5qYC3G8wAsqkKkIiagSBCQABV0kWFCQjCnWgPfPS0QmAGNJ5ClFhgoB1agBZQqx
+rsoCr3MBjppWA4k7cdNyma1MeZmXIAIUEVFRCDV4xKuihCDUqMLLqoRULGqACSN2
+wlOwcEhPkKBpsxrbhDPx/sH/59zJjB2RATRUDSqAiFiHKg+wioHMCxoFWBM0D0yQ
+uKU3EUZH7cZk1LS4lgDHiinTIN5cvUb+AOl0OhjVk0aEUUHDbmJyJ267tmFH2WnE
+dZ1EyFO7O50MTlD4j1EYmRZmo2SKFIknTNviQgIjDdf0nAWWE6iKJAkBjuxwzDgJ
+mx6hsCrPPu8ekmKWIhYhQKoAqSFSAERdMiQ2J5E1RHQZEkFQNCLLVNFERZUxFCQs
+QREZOmI7RVM5r7WYZXMhyGLqDcwyYTZYupuME66l6+G2CT5/tm9i1jjvifmyp8z4
++/B6KieNobGP3+eNAD/lno0s/Gx8uTyKlibl0qETdy48Lg3euzbQ8WBsxbaudedi
+NzrvVBQ87U0tyK7p21p7NWfv0FBeujWrKFkYbTm6JH9gzqbgoo1tDz88yt2aW/K1
++Ey/pg3PGt/25lTMcZT2uvafVur8mf7yS3nVa6v3LZtaVp4z9/qqmhdCTVv3pvi0
+iDb9cGF3oOnkj6qD6+smDW65uHLhaD049C5WMrq7auZckHxt11XcqqoYnt49eLOn
+9uXi1Oo9d4uXPymffPxy8FN10S4Dd0mVow/W5YcLjpUN1aPWE32vvoXbO7afwhtG
+qvj9838ZFbFj9xcdmeHkrJl2NnHgdueg2vsb74044Q==
+=lXjT
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/lokulin
+
+==================================================================
