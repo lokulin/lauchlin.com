@@ -21,7 +21,7 @@ GEM
     execjs (2.4.0)
     fast-stemmer (1.0.2)
     fastercsv (1.5.5)
-    ffi (1.9.8)
+    ffi (1.13.1)
     gemoji (2.1.0)
     github-pages (33)
       RedCloth (= 4.2.9)
