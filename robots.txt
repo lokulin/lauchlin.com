@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /feeds
-Disallow: /*/_/
-Sitemap: http://www.lauchlin.com:80/system/feeds/sitemap
