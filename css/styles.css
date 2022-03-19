@@ -6912,6 +6912,7 @@ textarea.form-control-lg {
 
 .d-flex {
   display: flex !important;
+  flex-wrap: wrap;
 }
 
 .d-inline-flex {
