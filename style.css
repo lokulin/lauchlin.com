@@ -1,0 +1,25 @@
+body { font-size: 12pt; background-color: black; }
+h1, h2, p, ul, li { font-size: 12pt; font-weight: normal; padding: 0%; margin: 0%; display: inline;}
+a { color: white; }
+div {
+    color: white;
+    font-family: 'DejaVuSansMonoBook', monospace;
+    font-variant-numeric: tabular-nums lining-nums;
+    font-kerning:none;
+    width: fit-content;
+    white-space: pre;
+}
+.abs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.ib {
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+#boxes {
+    background-color: blue;z-index: -1;
+}
