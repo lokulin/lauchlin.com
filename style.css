@@ -2,18 +2,22 @@ body { font-size: clamp(8pt, 2vw, 18pt); background-color: black; }
 h1, h2, p, ul, li { font-size: 1em; font-weight: normal; padding: 0%; margin: 0%; display: inline;}
 a { color: orange; }
 div {
-    color: orange;
-    font-family: 'DejaVuSansMonoBook', monospace;
-    font-variant-numeric: tabular-nums lining-nums;
-    font-kerning:none;
-    width: fit-content;
-    white-space: pre;
+  color: orange;
+  font-family: 'DejaVuSansMonoBook', monospace;
+  font-variant-numeric: tabular-nums lining-nums;
+  font-kerning:none;
+  width: fit-content;
+  white-space: pre;
 }
 .abs {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  height: fit-content;
 }
 .ib {
     display: inline-block;
